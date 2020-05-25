@@ -9,7 +9,7 @@
   }
   
   .checkbox:checked ~.switch::before {
-    transform: translateX(0);
+    transform: translateX(40px);
   }
   
   .switch {
@@ -32,7 +32,7 @@
     height: 30px;
     background: var(--switchSpinner);
     border-radius: 50%;
-    transform: translateX(40px);
+    transform: translateX(0);
     transition: .3s;
     will-change: transform;
   }  

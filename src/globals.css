@@ -2,8 +2,12 @@
 body{
     margin: 0;
     font-family: 'Inter', sans-serif;
+}
+
+main {
     color: var(--baseColor);
     background: var(--baseBackground);
+    min-height: 100vh;
 }
 
 :root{
@@ -55,12 +59,12 @@ body{
     .grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .header-total {
+        border: none;
+    }
     .header-grid {
         display: grid;
         grid-template-columns: 1fr 200px;
-    }
-    .header-total {
-        border: none;
     }
 }
 
