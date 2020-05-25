@@ -43,11 +43,57 @@ body{
         max-width: 1024px;
         margin: auto;
     }
-  }
+}
   
-  @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
-  }
+}
+
+@media screen and (min-width: 1024px){
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .header-grid {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+    }
+    .header-total {
+        border: none;
+    }
+}
+
+.is-dark-mode {
+    --cardGray: #252b43;
+    --baseBackground: #1d2029;
+    --baseColor: white;
+    --gray: #8088ad;
+    --lightGray: #1d2029;
+    --cardTitle: #8088ad;
+    --switchSpinner: #282943;
+    --switch: linear-gradient(to right, #4796d2 0%, #37c38f 100%);
+}
   
+.is-light-mode {
+    --gray: #5f616d;
+    --cardGray: #edf0f9;
+    --lightGray: #f8f9fe;
+    --baseBackground: white;
+    --baseColor: #1d2029;
+    --cardTitle: #6f717e;
+    --switchSpinner: white;
+    --switch: #5f616d;
+}
+@media (prefers-color-schema: dark) {
+    :root {
+        --cardGray: #252b43;
+        --baseBackground: #1d2029;
+        --baseColor: white;
+        --gray: #8088ad;
+        --lightGray: #1d2029;
+        --cardTitle: #8088ad;
+        --switchSpinner: #282943;
+        --switch: linear-gradient(to right, #4796d2 0%, #37c38f 100%);
+    }
+}
